@@ -49,7 +49,7 @@ export function DocumentField({
       <span className="label-mono block min-h-[26px] text-[9.5px] leading-[1.35]">
         {index} · {label}
       </span>
-      <span className="font-mono text-[14px] font-medium text-carbon">
+      <span className="font-mono text-[13px] leading-[1.35] font-medium text-carbon sm:text-[14px]">
         {children}
       </span>
     </div>

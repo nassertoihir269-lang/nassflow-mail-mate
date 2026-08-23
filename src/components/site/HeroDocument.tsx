@@ -69,12 +69,12 @@ export function HeroDocument() {
           </DocumentField>
         </div>
 
-        <div className="flex items-end justify-between gap-4 px-4 pt-4 pb-6">
-          <div>
+        <div className="flex flex-nowrap items-end justify-between gap-3 px-4 pt-4 pb-6">
+          <div className="min-w-0">
             <span className="label-mono block text-[9.5px]">
               PRIX PROPOSÉ — GRILLE INTERNE + MARGE
             </span>
-            <span className="mt-1 block font-display text-[30px] font-extrabold tracking-[-0.025em] text-ink">
+            <span className="mt-1 block font-display text-[22px] font-extrabold tracking-[-0.025em] whitespace-nowrap text-ink sm:text-[30px]">
               348,00 € HT
             </span>
           </div>

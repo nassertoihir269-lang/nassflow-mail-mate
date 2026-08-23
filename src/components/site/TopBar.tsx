@@ -2,13 +2,16 @@ import { Link } from "@tanstack/react-router";
 
 export function TopBar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-rule bg-paper/95 backdrop-blur-[2px]">
-      <div className="wrap flex h-14 items-center justify-between gap-4">
-        <Link to="/" className="flex items-baseline gap-2 no-underline">
-          <span className="font-display text-[19px] font-extrabold tracking-[-0.025em] text-ink">
+    <header className="sticky top-0 z-50 border-b border-rule bg-paper">
+      <div className="wrap flex h-14 items-center justify-between gap-3">
+        <Link
+          to="/"
+          className="flex shrink-0 items-baseline gap-1.5 whitespace-nowrap no-underline sm:gap-2"
+        >
+          <span className="font-display text-[15px] font-extrabold tracking-[-0.025em] text-ink sm:text-[19px]">
             NASSFLOW
           </span>
-          <span className="font-display text-[13px] font-semibold text-carbon">
+          <span className="font-display text-[11px] font-semibold text-carbon sm:text-[13px]">
             Freight AI
           </span>
         </Link>
@@ -18,9 +21,10 @@ export function TopBar() {
           </span>
           <a
             href="/#diagnostic"
-            className="border border-ink bg-ink px-3.5 py-2 font-mono text-[11px] font-semibold tracking-[0.1em] text-paper-2 uppercase no-underline transition-colors hover:bg-carbon hover:border-carbon"
+            className="shrink-0 border border-ink bg-ink px-3 py-2 font-mono text-[10.5px] font-semibold tracking-[0.1em] whitespace-nowrap text-paper-2 uppercase no-underline transition-colors hover:bg-carbon hover:border-carbon sm:px-3.5 sm:text-[11px]"
           >
-            Analyser ma boîte cotation
+            <span className="sm:hidden">Diagnostic</span>
+            <span className="hidden sm:inline">Analyser ma boîte cotation</span>
           </a>
         </div>
       </div>
