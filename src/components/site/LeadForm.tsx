@@ -65,6 +65,15 @@ const VIDE: Champs = {
 const champClass =
   "w-full border border-[rgba(245,247,245,0.28)] bg-[rgba(245,247,245,0.06)] px-3 py-2.5 font-sans text-[16px] text-paper-2 placeholder:text-[rgba(245,247,245,0.45)] focus:border-paper-2 focus:outline-none";
 
+const selectClass =
+  "w-full appearance-none border border-[#333B3F] bg-[#1D2225] bg-no-repeat py-2.5 pr-9 pl-3 font-sans text-[16px] text-paper-2 focus:border-paper-2 focus:outline-none";
+
+const flecheSelect = {
+  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M1 1L5 5L9 1' stroke='rgba(245,247,245,0.45)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")`,
+  backgroundPosition: "right 0.75rem center",
+  backgroundSize: "10px 6px",
+};
+
 function Label({ htmlFor, children, requis }: { htmlFor: string; children: string; requis?: boolean | undefined }) {
   return (
     <label
@@ -171,8 +180,8 @@ export function LeadForm() {
       </div>
       <div>
         <Label htmlFor="volume_jour" requis>Demandes de cotation reçues par jour</Label>
-        <select id="volume_jour" className={champClass} value={valeurs.volume_jour} onChange={set("volume_jour")}>
-          <option value="">Choisir</option>
+        <select id="volume_jour" className={selectClass} style={flecheSelect} value={valeurs.volume_jour} onChange={set("volume_jour")}>
+          <option value="">Sélectionnez…</option>
           {VOLUMES.map((v) => (
             <option key={v} value={v} className="text-ink">{v}</option>
           ))}
@@ -181,8 +190,8 @@ export function LeadForm() {
       </div>
       <div>
         <Label htmlFor="localisation_tarifs" requis>Où sont vos tarifs aujourd’hui ?</Label>
-        <select id="localisation_tarifs" className={champClass} value={valeurs.localisation_tarifs} onChange={set("localisation_tarifs")}>
-          <option value="">Choisir</option>
+        <select id="localisation_tarifs" className={selectClass} style={flecheSelect} value={valeurs.localisation_tarifs} onChange={set("localisation_tarifs")}>
+          <option value="">Sélectionnez…</option>
           {TARIFS.map((v) => (
             <option key={v} value={v} className="text-ink">{v}</option>
           ))}
@@ -191,8 +200,8 @@ export function LeadForm() {
       </div>
       <div>
         <Label htmlFor="tms">TMS utilisé</Label>
-        <select id="tms" className={champClass} value={valeurs.tms} onChange={set("tms")}>
-          <option value="">Choisir</option>
+        <select id="tms" className={selectClass} style={flecheSelect} value={valeurs.tms} onChange={set("tms")}>
+          <option value="">Sélectionnez…</option>
           {TMS.map((v) => (
             <option key={v} value={v} className="text-ink">{v}</option>
           ))}
@@ -200,8 +209,8 @@ export function LeadForm() {
       </div>
       <div>
         <Label htmlFor="activite">Activité principale</Label>
-        <select id="activite" className={champClass} value={valeurs.activite} onChange={set("activite")}>
-          <option value="">Choisir</option>
+        <select id="activite" className={selectClass} style={flecheSelect} value={valeurs.activite} onChange={set("activite")}>
+          <option value="">Sélectionnez…</option>
           {ACTIVITES.map((v) => (
             <option key={v} value={v} className="text-ink">{v}</option>
           ))}
