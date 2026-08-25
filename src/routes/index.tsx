@@ -36,7 +36,7 @@ const FONDATEUR = {
   telephone: "06 56 76 51 28",
   email: "contact@nassflow.com",
   parcours:
-    "Diplômé d’un bac professionnel, je me suis spécialisé dans l’intelligence artificielle et l’automatisation. Je conçois aujourd’hui des agents IA et j’automatise des processus métier — avec un principe simple : partir d’un vrai problème avant d’écrire une ligne de code. Je ne viens pas du transport, alors je construis NASSFLOW avec des affréteurs et des commissionnaires, sur leurs vraies boîtes mail et leurs vraies grilles, plutôt que seul derrière un écran.",
+    "Diplômé d’un bac professionnel, je me suis spécialisé dans l’intelligence artificielle et l’automatisation. Je conçois des agents IA et j’automatise des processus métier, avec une méthode simple : partir d’un vrai problème avant d’écrire une ligne de code. NASSFLOW se construit avec des affréteurs et des commissionnaires, sur leurs vraies boîtes mail et leurs vraies grilles tarifaires.",
 };
 
 const TACHES = [
