@@ -45,29 +45,28 @@ function MentionsLegales() {
           <Bloc
             titre="Éditeur du site"
             lignes={[
-              "Raison sociale : RAISON SOCIALE À COMPLÉTER",
-              "Forme juridique : FORME JURIDIQUE À COMPLÉTER",
-              "Capital social : CAPITAL SOCIAL À COMPLÉTER",
-              "SIREN : SIREN À COMPLÉTER",
-              "Adresse du siège : ADRESSE DU SIÈGE À COMPLÉTER",
+              "Raison sociale : Nasser Aboudou",
+              "Forme juridique : Entrepreneur individuel",
+              "SIREN : 105 022 537",
+              "Adresse du siège : 70 avenue Rhin et Danube, 86000 Poitiers, France",
             ]}
           />
           <Bloc
             titre="Directeur de la publication"
-            lignes={["DIRECTEUR DE LA PUBLICATION À COMPLÉTER"]}
+            lignes={["Nasser Aboudou"]}
           />
           <Bloc
             titre="Contact"
             lignes={[
-              "E-mail : EMAIL À COMPLÉTER",
-              "Téléphone : TÉLÉPHONE À COMPLÉTER",
+              "E-mail : contact@nassflow.com",
+              "Téléphone : 06 56 76 51 28",
             ]}
           />
           <Bloc
             titre="Hébergeur"
             lignes={[
-              "Hébergeur : HÉBERGEUR À COMPLÉTER",
-              "Adresse de l’hébergeur : ADRESSE DE L’HÉBERGEUR À COMPLÉTER",
+              "Hébergeur : Vercel Inc.",
+              "Adresse de l’hébergeur : 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis",
             ]}
           />
           <Bloc

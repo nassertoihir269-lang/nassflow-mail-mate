@@ -31,11 +31,12 @@ export const Route = createFileRoute("/")({
 
 /* ————— Fondateur : valeurs à compléter, un seul endroit ————— */
 const FONDATEUR = {
-  nom: "NOM À COMPLÉTER",
-  initiales: "NF",
-  telephone: "TÉLÉPHONE À COMPLÉTER",
-  email: "EMAIL À COMPLÉTER",
-  parcours: "PARCOURS À COMPLÉTER",
+  nom: "Nasser Aboudou",
+  initiales: "NA",
+  telephone: "06 56 76 51 28",
+  email: "contact@nassflow.com",
+  parcours:
+    "Diplômé d’un bac professionnel, je me suis spécialisé dans l’intelligence artificielle et l’automatisation. Je conçois aujourd’hui des agents IA et j’automatise des processus métier — avec un principe simple : partir d’un vrai problème avant d’écrire une ligne de code. Je ne viens pas du transport, alors je construis NASSFLOW avec des affréteurs et des commissionnaires, sur leurs vraies boîtes mail et leurs vraies grilles, plutôt que seul derrière un écran.",
 };
 
 const TACHES = [

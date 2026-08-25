@@ -45,9 +45,9 @@ function Confidentialite() {
           <Bloc
             titre="Responsable de traitement"
             lignes={[
-              "Responsable de traitement : RAISON SOCIALE À COMPLÉTER",
-              "Adresse : ADRESSE DU SIÈGE À COMPLÉTER",
-              "Contact : EMAIL À COMPLÉTER",
+              "Responsable de traitement : Nasser Aboudou",
+              "Adresse : 70 avenue Rhin et Danube, 86000 Poitiers, France",
+              "Contact : contact@nassflow.com",
             ]}
           />
           <Bloc
@@ -78,7 +78,7 @@ function Confidentialite() {
           <Bloc
             titre="Sous-traitants et hébergement"
             lignes={[
-              "Les données du formulaire sont hébergées sur le territoire français chez : HÉBERGEUR À COMPLÉTER, ADRESSE DE L’HÉBERGEUR À COMPLÉTER.",
+              "Les données du formulaire sont hébergées sur le territoire français chez : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.",
               "Aucune donnée n’est cédée, revendue ou mutualisée avec un tiers à des fins commerciales.",
             ]}
           />
@@ -86,7 +86,7 @@ function Confidentialite() {
             titre="Vos droits"
             lignes={[
               "Vous disposez d’un droit d’accès, de rectification, d’effacement, d’opposition, de limitation et de portabilité de vos données.",
-              "Ces droits s’exercent par écrit à l’adresse : EMAIL À COMPLÉTER.",
+              "Ces droits s’exercent par écrit à l’adresse : contact@nassflow.com.",
             ]}
           />
           <Bloc
