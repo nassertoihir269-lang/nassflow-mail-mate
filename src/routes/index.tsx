@@ -29,16 +29,6 @@ export const Route = createFileRoute("/")({
   component: Accueil,
 });
 
-/* ————— Fondateur : valeurs à compléter, un seul endroit ————— */
-const FONDATEUR = {
-  nom: "Nasser Aboudou",
-  initiales: "NA",
-  telephone: "06 56 76 51 28",
-  email: "contact@nassflow.com",
-  parcours:
-    "Diplômé d’un bac professionnel, je me suis spécialisé dans l’intelligence artificielle et l’automatisation. Je conçois des agents IA et j’automatise des processus métier, avec une méthode simple : partir d’un vrai problème avant d’écrire une ligne de code. NASSFLOW se construit avec des affréteurs et des commissionnaires, sur leurs vraies boîtes mail et leurs vraies grilles tarifaires.",
-};
-
 const TACHES = [
   ["Lire la demande et la qualifier", "Cotation, relance, litige ou facture ?", "×40/j", "0:30"],
   ["Extraire les informations transport", "Départ, arrivée, colis, poids, mètres plancher, dates", "×40/j", "1:00"],
@@ -310,51 +300,11 @@ function Accueil() {
           </div>
         </section>
 
-        {/* 05 FONDATEUR */}
-        <section className="border-b border-rule">
-          <div className="wrap py-14 min-[900px]:py-20">
-            <p className="eyebrow">05 — QUI VOUS PARLE</p>
-            <h2 className="mt-5 text-[27px] min-[900px]:text-[36px]">
-              Un interlocuteur, pas un service client.
-            </h2>
-            <div className="mt-10 flex flex-col gap-8 min-[700px]:flex-row min-[700px]:gap-10">
-              <div className="flex h-[88px] w-[88px] shrink-0 items-center justify-center border border-rule bg-paper-2">
-                <span className="font-display text-[28px] font-extrabold tracking-[-0.025em] text-carbon">
-                  {FONDATEUR.initiales}
-                </span>
-              </div>
-              <div className="max-w-[46em]">
-                <p className="font-display text-[22px] font-extrabold tracking-[-0.025em]">
-                  {FONDATEUR.nom}
-                </p>
-                <p className="label-mono mt-1">Fondateur</p>
-                <p className="mt-5 text-ink-soft">{FONDATEUR.parcours}</p>
-                <p className="mt-4 text-ink-soft">
-                  Le déploiement se fait avec vous, sur vos vrais e-mails et vos
-                  vraies grilles. Pas de configuration à faire seul dans un
-                  coin.
-                </p>
-                <p className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[13px] tracking-[0.06em]">
-                  <a href={`tel:${FONDATEUR.telephone}`} className="text-carbon underline">
-                    {FONDATEUR.telephone}
-                  </a>
-                  <a href={`mailto:${FONDATEUR.email}`} className="text-carbon underline">
-                    {FONDATEUR.email}
-                  </a>
-                </p>
-                <p className="mt-3 font-mono text-[11px] tracking-[0.08em] text-ink-soft uppercase">
-                  Un seul interlocuteur, du premier appel jusqu’au déploiement.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 06 FORMULAIRE */}
+        {/* 05 FORMULAIRE */}
         <section className="bg-ink">
           <div className="wrap py-14 min-[900px]:py-20">
             <p className="font-mono text-[11px] font-semibold tracking-[0.14em] text-[#93b3e0] uppercase">
-              06 — DEMANDE
+              05 — DEMANDE
             </p>
             <h2 className="mt-5 max-w-[20em] text-[27px] text-paper-2 min-[900px]:text-[36px]">
               Voir ce que votre boîte cotation contient réellement.
