@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { DocumentFrame, DocumentField } from "./DocumentFrame";
 
 const CHAMPS = [
@@ -20,14 +20,31 @@ function Surligne({ children }: { children: string }) {
 
 export function HeroDocument() {
   const [anime, setAnime] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const reduit = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setAnime(!reduit);
+    if (reduit) return;
+
+    const el = rootRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          setAnime(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+    observer.observe(el);
+
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div>
+    <div ref={rootRef}>
       <DocumentFrame titre="DEMANDE ENTRANTE" reference="LUN. 09:12">
         <div className="px-4 py-4">
           <p className="text-[15.5px] leading-[1.65] text-ink">
