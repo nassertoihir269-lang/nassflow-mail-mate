@@ -1,11 +1,20 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 
 export function TopBar() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  function onLogoClick() {
+    if (pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }
+
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-paper">
       <div className="wrap flex h-14 items-center justify-between gap-3">
         <Link
           to="/"
+          onClick={onLogoClick}
           className="flex shrink-0 items-baseline gap-1.5 whitespace-nowrap no-underline sm:gap-2"
         >
           <span className="font-display text-[15px] font-extrabold tracking-[-0.025em] text-ink sm:text-[19px]">
