@@ -78,7 +78,8 @@ function Confidentialite() {
           <Bloc
             titre="Sous-traitants et hébergement"
             lignes={[
-              "Les données du formulaire sont hébergées sur le territoire français chez : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.",
+              "Le site est servi par une infrastructure internationale (Vercel Inc., États-Unis).",
+              "Les données du formulaire, elles, sont stockées et traitées par Supabase au sein de l’Union européenne (région Paris, eu-west-3). Si un transfert hors de l’Union européenne est nécessaire, il est encadré par des clauses contractuelles types.",
               "Aucune donnée n’est cédée, revendue ou mutualisée avec un tiers à des fins commerciales.",
             ]}
           />

@@ -6,7 +6,7 @@ export function Footer() {
       <div className="wrap py-6">
         <p className="font-mono text-[11px] leading-[1.9] tracking-[0.08em] text-ink-soft uppercase">
           NASSFLOW Freight AI · Agents IA pour le transport et l’affrètement ·
-          Données hébergées en France ·{" "}
+          Données stockées dans l’Union européenne ·{" "}
           <Link to="/mentions-legales" className="text-ink underline">
             Mentions légales
           </Link>{" "}

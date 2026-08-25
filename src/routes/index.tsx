@@ -80,7 +80,7 @@ const RAPPORT: Array<[string, string, boolean]> = [
 const CONFIDENTIALITE = [
   ["Cloisonnement strict", "Vos tarifs, vos marges et votre historique restent isolés dans votre espace. Ils ne sont jamais mutualisés, jamais agrégés, jamais visibles par un autre client — y compris un confrère de votre groupement."],
   ["Aucun entraînement sur vos données", "Vos e-mails et vos prix ne servent jamais à entraîner un modèle partagé. Ils alimentent uniquement votre propre référentiel."],
-  ["Hébergement en France", "Données hébergées sur le territoire français, conformité RGPD, suppression complète sous 30 jours sur simple demande écrite."],
+  ["Vos données en Europe", "Le site est servi par une infrastructure internationale ; vos données de contact sont stockées et traitées au sein de l’Union européenne, conformité RGPD, suppression complète sous 30 jours sur simple demande écrite."],
 ];
 
 function Accueil() {
